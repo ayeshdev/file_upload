@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "crud-a9e7a": {
+      "hosting": {
+        "file_upload": [
+          "crud-a9e7a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "crud-a9e7a"
+  }
+}
