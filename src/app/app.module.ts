@@ -14,6 +14,7 @@ import { UploadFormComponent } from './components/upload-form/upload-form.compon
 import { UploadListComponent } from './components/upload-list/upload-list.component';
 import { AngularFireDatabase, AngularFireDatabaseModule, AngularFireList } from '@angular/fire/compat/database';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AngularFireStorage } from '@angular/fire/compat/storage';
     AngularFireModule.initializeApp(environment.firebase),
 AngularFireModule,
 AngularFireStorageModule,
+provideDatabase(() => getDatabase()),
 
   ],
   providers: [
